@@ -2,7 +2,7 @@
 include '../connection.php';
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 
 $sql_check_username = "SELECT * FROM user WHERE username = '$username'";
 $result_check_username = $connect->query($sql_check_username);
