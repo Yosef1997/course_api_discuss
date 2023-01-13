@@ -4,7 +4,7 @@ include '../connection.php';
 $from_id_user = $_POST['from_id_user'];
 $to_id_user = $_POST['to_id_user'];
 
-$sql = " INSERT INTO follow
+$sql = "INSERT INTO follow
          Set
          from_id_user = '$from_id_user',
          to_id_user = '$to_id_user'
