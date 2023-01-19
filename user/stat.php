@@ -25,4 +25,3 @@ echo json_encode(array(
   "follower"=> floatval($result_follower->num_rows),
   "following"=> floatval($result_following->num_rows),
 ));
->
