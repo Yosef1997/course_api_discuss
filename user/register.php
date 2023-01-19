@@ -26,4 +26,3 @@ if($result_check_username->num_rows>0){
     echo json_encode(array("success"=> false));
   }
 }
->
