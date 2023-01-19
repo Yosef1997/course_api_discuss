@@ -8,7 +8,7 @@ $sql = "SELECT * FROM follow
         from_id_user = '$id_user'
        ";
 $result = $connect->query($sql);
-if(result->num_rows>0){
+if($result->num_rows>0){
   $data = array();
   while($row_following = $result->fetch_assoc()) {
       $id_following = $row_following['to_id_user'];
@@ -33,4 +33,3 @@ if(result->num_rows>0){
     "data"=>[],
   ));
 }
->
