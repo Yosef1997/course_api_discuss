@@ -10,9 +10,8 @@ $sql = "INSERT INTO follow
          to_id_user = '$to_id_user'
        ";
 $result = $connect->query($sql);
-if(result){
+if($result){
   echo json_encode(array("success"=>true));
 }else {
   echo json_encode(array("success"=>false));
 }
->
