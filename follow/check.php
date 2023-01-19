@@ -20,4 +20,3 @@ if($result->num_rows>0){
     "success"=>false,
   ));
 }
->
