@@ -8,7 +8,7 @@ $sql = "SELECT * FROM user
         username LIKE '%$search_query%'
        ";
 $result = $connect->query($sql);
-if(result->num_rows>0){
+if($result->num_rows>0){
   $data = array();
   while($get_row = $result->fetch_assoc()) {
       $data[] = $get_row;
@@ -23,4 +23,4 @@ if(result->num_rows>0){
     "data"=>[],
   ));
 }
->
+
