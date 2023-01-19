@@ -23,4 +23,3 @@ if($result) {
 }else{
   return json_encode(array("success"->FALSE));
 }
->
