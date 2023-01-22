@@ -18,9 +18,9 @@ if($result -> num_rows >0) {
   echo json_encode(array(
     "success"=>true,
     "data"=>$data[0],
-  ))
+  ));
 }else {
   echo json_encode(array(
     "success"=>false
-  ))
+  ));
 }
