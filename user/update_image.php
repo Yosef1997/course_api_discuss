@@ -19,7 +19,7 @@ if($result) {
     unlink("../image/user/".$old_image);
   }
   file_put_contents("../image/user". $new_image, base64_decode($new_base64code));
-  echo json_encode(array("success"->true));
+  echo json_encode(array("success"=>true));
 }else{
-  return json_encode(array("success"->FALSE));
+  return json_encode(array("success"=>FALSE));
 }
