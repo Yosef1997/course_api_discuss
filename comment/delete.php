@@ -12,7 +12,7 @@ $result = $connect->query($sql);
 
 if($result){
   if($image !=''){
-    unlink("../image/comment".$image);
+    unlink("../image/comment/".$image);
   }
   echo json_encode(array("success"=>true));
 }else {
