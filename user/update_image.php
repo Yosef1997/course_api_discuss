@@ -18,8 +18,8 @@ if($result) {
   if($old_image != "default_user_image.png"){
     unlink("../image/user/".$old_image);
   }
-  file_put_contents("../image/user". $new_image, base64_decode($new_base64code));
+  file_put_contents("../image/user/". $new_image, base64_decode($new_base64code));
   echo json_encode(array("success"=>true));
 }else{
-  return json_encode(array("success"=>FALSE));
+  echo json_encode(array("success"=>false));
 }
